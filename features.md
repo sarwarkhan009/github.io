@@ -3,7 +3,6 @@ layout: default
 title: Features
 ---
 
-![QuizWallah Logo](/assets/images/logo.png){: style="height:80px;" }
 
 # Core Features
 
