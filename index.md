@@ -3,9 +3,6 @@ layout: default
 title: Home
 ---
 
-[Home](/) | [About](/about.html) | [Features](/features.html) | [Contact](/contact.html) | [Testimonials](/testimonials.html)
-
----
 
 ![QuizWallah Logo](/assets/images/logo.png){: style="height:80px;" }
 
