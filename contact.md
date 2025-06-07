@@ -7,9 +7,9 @@ title: Contact
 # Get in Touch
 
 We’d love to hear from you!  
-**Email:** support@quizwallah.com  
-**Phone:** +91-XXXXXXXXXX  
-**Address:** 123 Learning Lane, Education City, India  
+**Email:** quizwallahpatna@gmail.com  
+**Phone:** +91-700 4050 165 
+**Address:** Firdaus Enclave, Church Road, Ranchi
 
 Or drop us a message using the form below (you can replace this with your own form later):
 
