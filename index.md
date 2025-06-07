@@ -4,7 +4,7 @@ title: Home
 ---
 
 
-![QuizWallah Logo](/assets/images/logo.png){: style="height:80px;" }
+
 
 # Welcome to QuizWallah
 
