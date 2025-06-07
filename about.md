@@ -3,7 +3,6 @@ layout: default
 title: About
 ---
 
-![QuizWallah Logo](/assets/images/logo.png){: style="height:80px;" }
 
 # About QuizWallah
 
