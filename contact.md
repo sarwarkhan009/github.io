@@ -3,7 +3,6 @@ layout: default
 title: Contact
 ---
 
-![QuizWallah Logo](/assets/images/logo.png){: style="height:80px;" }
 
 # Get in Touch
 
