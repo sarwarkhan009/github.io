@@ -5,51 +5,46 @@ title: Home
 
 <!-- 👇 Clean Slider with sliding transition -->
 
-<div class="banner-wrapper">
-  <div class="banner-track">
-    <div class="banner-slide"><img src="/assets/images/banner1.png" alt="Banner 1" /></div>
-    <div class="banner-slide"><img src="/assets/images/banner2.png" alt="Banner 2" /></div>
-    <div class="banner-slide"><img src="/assets/images/banner3.png" alt="Banner 3" /></div>
-    <div class="banner-slide"><img src="/assets/images/banner4.png" alt="Banner 4" /></div>
-    <div class="banner-slide"><img src="/assets/images/banner5.png" alt="Banner 5" /></div>
+<div class="slider-container">
+  <div class="slider-track">
+    <img src="/assets/images/banner1.png" alt="Banner 1">
+    <img src="/assets/images/banner2.png" alt="Banner 2">
+    <img src="/assets/images/banner3.png" alt="Banner 3">
+    <img src="/assets/images/banner4.png" alt="Banner 4">
+    <img src="/assets/images/banner5.png" alt="Banner 5">
   </div>
 </div>
 
 <style>
-.banner-wrapper {
+.slider-container {
   width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  max-height: 400px;
   position: relative;
 }
 
-.banner-track {
+.slider-track {
   display: flex;
   width: 500%;
-  animation: slideAnimation 25s infinite;
+  animation: slideBanner 25s infinite;
 }
 
-.banner-slide {
-  flex: 0 0 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.banner-slide img {
+.slider-track img {
   width: 100%;
-  max-height: 400px;
-  object-fit: contain;
-  display: block;
+  flex-shrink: 0;
+  object-fit: cover;
 }
-@keyframes slideAnimation {
+@keyframes slideBanner {
   0%, 20%   { transform: translateX(0%); }
-  25%, 45%  { transform: translateX(-100%); }
-  50%, 70%  { transform: translateX(-200%); }
-  75%, 95%  { transform: translateX(-300%); }
-  100%      { transform: translateX(-400%); }
+  25%, 40%  { transform: translateX(-100%); }
+  45%, 60%  { transform: translateX(-200%); }
+  65%, 80%  { transform: translateX(-300%); }
+  85%, 100% { transform: translateX(-400%); }
 }
 </style>
+
 
 
 
