@@ -41,20 +41,14 @@ title: Home
   <h3 style="text-align: center;">App Preview</h3>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 1rem;">
     <img src="/assets/images/screenshot1.png" style="width: 200px; border-radius: 8px;" />
-    <!-- ... your other 5 screenshots ... -->
+   <img src="/assets/images/screenshot2.png" alt="Screenshot 2" style="width: 200px; border-radius: 8px;" />
+  <img src="/assets/images/screenshot3.png" alt="Screenshot 3" style="width: 200px; border-radius: 8px;" />
+  <img src="/assets/images/screenshot4.png" alt="Screenshot 4" style="width: 200px; border-radius: 8px;" />
+  <img src="/assets/images/screenshot5.png" alt="Screenshot 5" style="width: 200px; border-radius: 8px;" />
+  <img src="/assets/images/screenshot6.png" alt="Screenshot 6" style="width: 200px; border-radius: 8px;" />
   </div>
 </div>
 
 
 <hr style="margin: 2rem 0;" />
 
-<h3 style="text-align: center;">App Preview</h3>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 1rem;">
-  <img src="/assets/images/screenshot1.png" alt="Screenshot 1" style="width: 200px; border-radius: 8px;" />
-  <img src="/assets/images/screenshot2.png" alt="Screenshot 2" style="width: 200px; border-radius: 8px;" />
-  <img src="/assets/images/screenshot3.png" alt="Screenshot 3" style="width: 200px; border-radius: 8px;" />
-  <img src="/assets/images/screenshot4.png" alt="Screenshot 4" style="width: 200px; border-radius: 8px;" />
-  <img src="/assets/images/screenshot5.png" alt="Screenshot 5" style="width: 200px; border-radius: 8px;" />
-  <img src="/assets/images/screenshot6.png" alt="Screenshot 6" style="width: 200px; border-radius: 8px;" />
-</div>
