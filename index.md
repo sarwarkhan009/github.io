@@ -4,21 +4,19 @@ title: Home
 ---
 
 <!-- 👇 Clean Slider with sliding transition -->
-<div class="slider-container">
-  <div class="slider-track">
-    <img src="/assets/images/banner1.png" alt="Banner 1" class="slider-image">
-    <img src="/assets/images/banner2.png" alt="Banner 2" class="slider-image">
-    <img src="/assets/images/banner3.png" alt="Banner 3" class="slider-image">
-    <img src="/assets/images/banner4.png" alt="Banner 4" class="slider-image">
-    <img src="/assets/images/banner5.png" alt="Banner 5" class="slider-image">
+<div class="slider">
+  <div class="slides">
+    <img src="/assets/images/banner1.png" alt="Banner 1">
+    <img src="/assets/images/banner2.png" alt="Banner 2">
+    <img src="/assets/images/banner3.png" alt="Banner 3">
+    <img src="/assets/images/banner4.png" alt="Banner 4">
+    <img src="/assets/images/banner5.png" alt="Banner 5">
   </div>
 </div>
 
 <style>
-.banner-slider {
+.slider {
   width: 100%;
-  max-width: 100%;
-  height: auto;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   position: relative;
@@ -27,16 +25,15 @@ title: Home
 .slides {
   display: flex;
   width: 500%;
-  animation: slideAnimation 30s infinite;
+  animation: slideShow 25s infinite;
 }
 
 .slides img {
   width: 100%;
-  aspect-ratio: 16 / 9;
   object-fit: contain;
   flex-shrink: 0;
 }
-@keyframes slideAnimation {
+@keyframes slideShow {
   0%   { transform: translateX(0%); }
   20%  { transform: translateX(0%); }
   25%  { transform: translateX(-100%); }
