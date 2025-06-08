@@ -17,7 +17,7 @@ title: Home
 .fade-slider {
   position: relative;
   width: 100%;
-  height: 60%; /* banner height */
+  height: 480px; /* banner height */
   overflow: hidden;
 }
 
