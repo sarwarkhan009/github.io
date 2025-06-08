@@ -15,31 +15,39 @@ title: Home
 </div>
 
 <style>
-.slider-container {
+.banner-slider {
   width: 100%;
-  max-height: 350px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   position: relative;
-  background-color: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.slider-track {
+.banner-slider .slides {
   display: flex;
-  transition: transform 0.8s ease-in-out;
-  width: 100%;
+  width: 500%;
+  animation: slideAnimation 25s infinite linear;
 }
 
-.slider-image {
+.banner-slider .slides img {
   width: 100%;
-  height: 350px;
-  object-fit: contain; /* ✅ fix: show full image */
+  height: auto;
   flex-shrink: 0;
-  background-color: white;
+  object-fit: cover;
+}
+
+@keyframes slideAnimation {
+  0%   { transform: translateX(0%); }
+  20%  { transform: translateX(0%); }
+  25%  { transform: translateX(-100%); }
+  45%  { transform: translateX(-100%); }
+  50%  { transform: translateX(-200%); }
+  70%  { transform: translateX(-200%); }
+  75%  { transform: translateX(-300%); }
+  95%  { transform: translateX(-300%); }
+  100% { transform: translateX(-400%); }
 }
 </style>
+
 
 
 <script>
