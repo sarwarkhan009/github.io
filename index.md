@@ -5,77 +5,53 @@ title: Home
 
 <!-- 👇 Clean Slider with sliding transition -->
 
-<div class="fade-banner">
-  <div class="fade-slide fade-show">
-    <img src="/assets/images/banner1.png" alt="Banner 1">
-  </div>
-  <div class="fade-slide">
-    <img src="/assets/images/banner2.png" alt="Banner 2">
-  </div>
-  <div class="fade-slide">
-    <img src="/assets/images/banner3.png" alt="Banner 3">
-  </div>
-  <div class="fade-slide">
-    <img src="/assets/images/banner4.png" alt="Banner 4">
-  </div>
-  <div class="fade-slide">
-    <img src="/assets/images/banner5.png" alt="Banner 5">
-  </div>
+<div class="fade-slider">
+  <img class="fade-slide" src="/assets/images/banner1.png" alt="Banner 1">
+  <img class="fade-slide" src="/assets/images/banner2.png" alt="Banner 2">
+  <img class="fade-slide" src="/assets/images/banner3.png" alt="Banner 3">
+  <img class="fade-slide" src="/assets/images/banner4.png" alt="Banner 4">
+  <img class="fade-slide" src="/assets/images/banner5.png" alt="Banner 5">
 </div>
 
-
 <style>
-.fade-banner {
+.fade-slider {
   position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 320px; /* banner height */
   overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background-color: #eef8ff;
 }
 
 .fade-slide {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
-.fade-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.fade-show {
+.fade-slide.active {
   opacity: 1;
+  z-index: 1;
 }
 </style>
 
-
-
 <script>
 let fadeIndex = 0;
-const fadeSlides = document.getElementsByClassName("fade-slide");
+const slides = document.getElementsByClassName('fade-slide');
 
 function showFadeSlides() {
-  for (let i = 0; i < fadeSlides.length; i++) {
-    fadeSlides[i].classList.remove("fade-show");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
   }
   fadeIndex++;
-  if (fadeIndex > fadeSlides.length) fadeIndex = 1;
-  fadeSlides[fadeIndex - 1].classList.add("fade-show");
-  setTimeout(showFadeSlides, 3000);
+  if (fadeIndex > slides.length) { fadeIndex = 1 }
+  slides[fadeIndex - 1].classList.add("active");
+  setTimeout(showFadeSlides, 4000); // 4 seconds per slide
 }
 
-window.onload = showFadeSlides;
+showFadeSlides();
 </script>
 
 
