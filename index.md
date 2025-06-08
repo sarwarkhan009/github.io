@@ -17,24 +17,25 @@ title: Home
 <style>
 .banner-slider {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   position: relative;
 }
 
-.banner-slider .slides {
+.slides {
   display: flex;
   width: 500%;
-  animation: slideAnimation 25s infinite linear;
+  animation: slideAnimation 30s infinite;
 }
 
-.banner-slider .slides img {
+.slides img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   flex-shrink: 0;
-  object-fit: cover;
 }
-
 @keyframes slideAnimation {
   0%   { transform: translateX(0%); }
   20%  { transform: translateX(0%); }
