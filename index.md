@@ -6,39 +6,46 @@ title: Home
 <!-- 👇 Clean Slider with sliding transition -->
 
 <div class="banner-slider">
-  <div class="slides">
-    <img src="/assets/images/banner1.png" alt="Banner 1">
-    <img src="/assets/images/banner2.png" alt="Banner 2">
-    <img src="/assets/images/banner3.png" alt="Banner 3">
-    <img src="/assets/images/banner4.png" alt="Banner 4">
-    <img src="/assets/images/banner5.png" alt="Banner 5">
+  <div class="slide-track">
+    <div class="slide"><img src="/assets/images/banner1.png" alt="Banner 1"></div>
+    <div class="slide"><img src="/assets/images/banner2.png" alt="Banner 2"></div>
+    <div class="slide"><img src="/assets/images/banner3.png" alt="Banner 3"></div>
+    <div class="slide"><img src="/assets/images/banner4.png" alt="Banner 4"></div>
+    <div class="slide"><img src="/assets/images/banner5.png" alt="Banner 5"></div>
   </div>
 </div>
-
 
 <style>
 .banner-slider {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 400px;
   overflow: hidden;
   position: relative;
   background-color: #e6f0ff;
 }
 
-.slides {
+.slide-track {
   display: flex;
-  width: 500%; /* 5 images */
-  animation: slide 25s infinite;
+  width: 500%; /* 5 slides */
+  height: 100%;
+  animation: slideBanner 25s infinite;
 }
 
-.slides img {
+.slide {
   flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
   max-width: 100%;
-  max-height: 400px;
+  max-height: 100%;
   object-fit: contain;
 }
-@keyframes slide {
+@keyframes slideBanner {
   0%, 15%   { transform: translateX(0%); }
   20%, 35%  { transform: translateX(-100%); }
   40%, 55%  { transform: translateX(-200%); }
