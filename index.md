@@ -5,56 +5,49 @@ title: Home
 
 <!-- 👇 Clean Slider with sliding transition -->
 
-
-<div class="slider">
-  <div class="slides">
-    <div class="slide"><img src="/assets/images/banner1.png" alt="Banner 1"></div>
-    <div class="slide"><img src="/assets/images/banner2.png" alt="Banner 2"></div>
-    <div class="slide"><img src="/assets/images/banner3.png" alt="Banner 3"></div>
-    <div class="slide"><img src="/assets/images/banner4.png" alt="Banner 4"></div>
-    <div class="slide"><img src="/assets/images/banner5.png" alt="Banner 5"></div>
+<div class="banner-wrapper">
+  <div class="banner-track">
+    <div class="banner-slide"><img src="/assets/images/banner1.png" alt="Banner 1" /></div>
+    <div class="banner-slide"><img src="/assets/images/banner2.png" alt="Banner 2" /></div>
+    <div class="banner-slide"><img src="/assets/images/banner3.png" alt="Banner 3" /></div>
+    <div class="banner-slide"><img src="/assets/images/banner4.png" alt="Banner 4" /></div>
+    <div class="banner-slide"><img src="/assets/images/banner5.png" alt="Banner 5" /></div>
   </div>
 </div>
 
 <style>
-.slider {
-  position: relative;
+.banner-wrapper {
   width: 100%;
-  max-width: 100%;
-  height: auto;
   overflow: hidden;
+  max-height: 400px;
+  position: relative;
 }
 
-.slides {
+.banner-track {
   display: flex;
   width: 500%;
-  animation: slideShow 25s infinite;
+  animation: slideAnimation 25s infinite;
 }
 
-.slide {
+.banner-slide {
   flex: 0 0 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.slide img {
+.banner-slide img {
   width: 100%;
-  max-height: 500px;
-  height: auto;
+  max-height: 400px;
   object-fit: contain;
   display: block;
 }
-@keyframes slideShow {
-  0%   { transform: translateX(0%); }
-  20%  { transform: translateX(0%); }
-  25%  { transform: translateX(-100%); }
-  45%  { transform: translateX(-100%); }
-  50%  { transform: translateX(-200%); }
-  70%  { transform: translateX(-200%); }
-  75%  { transform: translateX(-300%); }
-  95%  { transform: translateX(-300%); }
-  100% { transform: translateX(-400%); }
+@keyframes slideAnimation {
+  0%, 20%   { transform: translateX(0%); }
+  25%, 45%  { transform: translateX(-100%); }
+  50%, 70%  { transform: translateX(-200%); }
+  75%, 95%  { transform: translateX(-300%); }
+  100%      { transform: translateX(-400%); }
 }
 </style>
 
