@@ -5,69 +5,69 @@ title: Home
 
 <!-- 👇 Clean Slider with sliding transition -->
 
-<div class="banner-slider">
-  <div class="slide-track">
-    <div class="slide"><img src="/assets/images/banner1.png" alt="Banner 1"></div>
-    <div class="slide"><img src="/assets/images/banner2.png" alt="Banner 2"></div>
-    <div class="slide"><img src="/assets/images/banner3.png" alt="Banner 3"></div>
-    <div class="slide"><img src="/assets/images/banner4.png" alt="Banner 4"></div>
-    <div class="slide"><img src="/assets/images/banner5.png" alt="Banner 5"></div>
+<div class="fade-banner">
+  <div class="fade-slide fade-show">
+    <img src="/assets/images/banner1.png" alt="Banner 1">
+  </div>
+  <div class="fade-slide">
+    <img src="/assets/images/banner2.png" alt="Banner 2">
+  </div>
+  <div class="fade-slide">
+    <img src="/assets/images/banner3.png" alt="Banner 3">
+  </div>
+  <div class="fade-slide">
+    <img src="/assets/images/banner4.png" alt="Banner 4">
+  </div>
+  <div class="fade-slide">
+    <img src="/assets/images/banner5.png" alt="Banner 5">
   </div>
 </div>
 
 <style>
-.banner-slider {
+.fade-banner {
+  position: relative;
   width: 100%;
-  max-width: 100%;
   height: 400px;
   overflow: hidden;
-  position: relative;
-  background-color: #e6f0ff;
+  background-color: #eef8ff;
 }
 
-.slide-track {
-  display: flex;
-  width: 500%; /* 5 slides */
+.fade-slide {
+  position: absolute;
+  width: 100%;
   height: 100%;
-  animation: slideBanner 25s infinite;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-.slide {
-  flex: 0 0 100%;
+.fade-slide img {
+  width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slide img {
-  max-width: 100%;
-  max-height: 100%;
   object-fit: contain;
 }
-@keyframes slideBanner {
-  0%, 15%   { transform: translateX(0%); }
-  20%, 35%  { transform: translateX(-100%); }
-  40%, 55%  { transform: translateX(-200%); }
-  60%, 75%  { transform: translateX(-300%); }
-  80%, 100% { transform: translateX(-400%); }
+
+.fade-show {
+  opacity: 1;
 }
 </style>
 
 
 
-
 <script>
-let slidePos = 0;
-const images = document.querySelectorAll(".slider-image");
-const track = document.querySelector(".slider-track");
+let fadeIndex = 0;
+const fadeSlides = document.getElementsByClassName("fade-slide");
 
-function showNextSlide() {
-  slidePos = (slidePos + 1) % images.length;
-  track.style.transform = `translateX(-${slidePos * 100}%)`;
+function showFadeSlides() {
+  for (let i = 0; i < fadeSlides.length; i++) {
+    fadeSlides[i].classList.remove("fade-show");
+  }
+  fadeIndex++;
+  if (fadeIndex > fadeSlides.length) fadeIndex = 1;
+  fadeSlides[fadeIndex - 1].classList.add("fade-show");
+  setTimeout(showFadeSlides, 3000);
 }
 
-setInterval(showNextSlide, 4000); // 4 seconds per slide
+window.onload = showFadeSlides;
 </script>
 
 
