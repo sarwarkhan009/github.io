@@ -26,16 +26,25 @@ title: Home
 
 
 <hr style="margin: 2rem 0;" />
+<div style="background-color: white; padding: 2rem 1rem;">
+  <h2 style="text-align: center;">Why Choose QuizWallah?</h2>
+  <ul style="max-width: 700px; margin: auto; font-size: 1rem;">
+    <li>Daily MCQ assignments with instant results</li>
+    <li>Practice old assignments anytime, as many times</li>
+    <li>Parent dashboard to track child’s performance</li>
+    <li>School-wise reports generated automatically</li>
+    <li>Perfect screen-time use: productive, educational, fun!</li>
+  </ul>
+</div>
 
-<h2 style="text-align: center;">Why Choose QuizWallah?</h2>
+<div style="background-color: #f0fbff; padding: 2rem 1rem;">
+  <h3 style="text-align: center;">App Preview</h3>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 1rem;">
+    <img src="/assets/images/screenshot1.png" style="width: 200px; border-radius: 8px;" />
+    <!-- ... your other 5 screenshots ... -->
+  </div>
+</div>
 
-<ul style="max-width: 700px; margin: auto; font-size: 1rem;">
-  <li>Daily MCQ assignments with instant results</li>
-  <li>Practice old assignments anytime, as many times</li>
-  <li>Parent dashboard to track child’s performance</li>
-  <li>School-wise reports generated automatically</li>
-  <li>Perfect screen-time use: productive, educational, fun!</li>
-</ul>
 
 <hr style="margin: 2rem 0;" />
 
