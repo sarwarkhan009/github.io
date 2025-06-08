@@ -15,28 +15,27 @@ title: Home
   </div>
 </div>
 
+
 <style>
 .slider-container {
   width: 100%;
   max-width: 100%;
-  height: 400px;
+  height: auto;
   overflow: hidden;
-  position: relative;
   background: #e6f0ff;
+  text-align: center;
 }
 
 .slider-track {
   display: flex;
-  width: 500%;
   animation: slideBanner 25s infinite;
 }
 
 .slider-track img {
   width: 100%;
-  height: 100%;
-  flex-shrink: 0;
-  object-fit: contain; /* ✅ Fix: show full image without zooming in */
-  display: block;
+  max-height: 400px;
+  object-fit: contain; /* Show full image without cutting */
+  margin: auto;
 }
 @keyframes slideBanner {
   0%, 20%   { transform: translateX(0%); }
