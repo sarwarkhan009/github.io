@@ -3,9 +3,6 @@ layout: default
 title: Testimonials
 ---
 
-
-![QuizWallah Logo](/assets/images/logo.png){: style="height:80px;" }
-
 # What People Are Saying
 
 **“QuizWallah has transformed our students’ revision habits—daily quizzes keep them engaged!”**  
