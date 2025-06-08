@@ -95,20 +95,22 @@ showFadeSlides();
 
 
 <!-- 👇 APP PREVIEW SECTION -->
-<div style="background-color: #f0fbff; padding: 2rem 1rem;">
-  <h3 style="text-align: center;">App Preview</h3>
+<!-- App Preview Section -->
+<section style="background-color: #f0fbff; padding: 3rem 1rem;">
+  <h3 style="text-align: center; font-size: 1.6rem; font-weight: 600;">App Preview</h3>
   <p style="text-align: center; margin-top: 1rem; font-style: italic; color: #555;">
     More features & updates added regularly – based on student and school feedback.
   </p>
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 1rem;">
-    <img src="/assets/images/screenshot1.png" alt="Screenshot 1" style="width: 200px; border-radius: 8px;" />
-    <img src="/assets/images/screenshot2.png" alt="Screenshot 2" style="width: 200px; border-radius: 8px;" />
-    <img src="/assets/images/screenshot3.png" alt="Screenshot 3" style="width: 200px; border-radius: 8px;" />
-    <img src="/assets/images/screenshot4.png" alt="Screenshot 4" style="width: 200px; border-radius: 8px;" />
-    <img src="/assets/images/screenshot5.png" alt="Screenshot 5" style="width: 200px; border-radius: 8px;" />
-    <img src="/assets/images/screenshot6.png" alt="Screenshot 6" style="width: 200px; border-radius: 8px;" />
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 2rem 1rem;">
+    <img src="/assets/images/screenshot1.png" alt="Screenshot 1" style="width: 200px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+    <img src="/assets/images/screenshot2.png" alt="Screenshot 2" style="width: 200px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+    <img src="/assets/images/screenshot3.png" alt="Screenshot 3" style="width: 200px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+    <img src="/assets/images/screenshot4.png" alt="Screenshot 4" style="width: 200px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+    <img src="/assets/images/screenshot5.png" alt="Screenshot 5" style="width: 200px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
+    <img src="/assets/images/screenshot6.png" alt="Screenshot 6" style="width: 200px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" />
   </div>
-</div>
+</section>
+
 
 <hr style="margin: 2rem 0;" />
