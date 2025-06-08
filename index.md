@@ -5,8 +5,8 @@ title: Home
 
 <!-- 👇 Clean Slider with sliding transition -->
 
-<div class="slider-container">
-  <div class="slider-track">
+<div class="banner-slider">
+  <div class="slides">
     <img src="/assets/images/banner1.png" alt="Banner 1">
     <img src="/assets/images/banner2.png" alt="Banner 2">
     <img src="/assets/images/banner3.png" alt="Banner 3">
@@ -17,32 +17,33 @@ title: Home
 
 
 <style>
-.slider-container {
+.banner-slider {
   width: 100%;
   max-width: 100%;
   height: auto;
   overflow: hidden;
-  background: #e6f0ff;
-  text-align: center;
+  position: relative;
+  background-color: #e6f0ff;
 }
 
-.slider-track {
+.slides {
   display: flex;
-  animation: slideBanner 25s infinite;
+  width: 500%; /* 5 images */
+  animation: slide 25s infinite;
 }
 
-.slider-track img {
-  width: 100%;
+.slides img {
+  flex: 0 0 100%;
+  max-width: 100%;
   max-height: 400px;
-  object-fit: contain; /* Show full image without cutting */
-  margin: auto;
+  object-fit: contain;
 }
-@keyframes slideBanner {
-  0%, 20%   { transform: translateX(0%); }
-  25%, 40%  { transform: translateX(-100%); }
-  45%, 60%  { transform: translateX(-200%); }
-  65%, 80%  { transform: translateX(-300%); }
-  85%, 100% { transform: translateX(-400%); }
+@keyframes slide {
+  0%, 15%   { transform: translateX(0%); }
+  20%, 35%  { transform: translateX(-100%); }
+  40%, 55%  { transform: translateX(-200%); }
+  60%, 75%  { transform: translateX(-300%); }
+  80%, 100% { transform: translateX(-400%); }
 }
 </style>
 
