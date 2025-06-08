@@ -1,2 +1,13 @@
 theme: jekyll-theme-cayman
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Features
+    url: /features
+  - title: Contact
+    url: /contact
+  - title: Testimonials
+    url: /testimonials
 
