@@ -23,17 +23,24 @@ title: Home
   </div>
 </div>
 
+
 <style>
 .fade-banner {
   position: relative;
-  width: 100%;
-  height: 400px;
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
   background-color: #eef8ff;
 }
 
 .fade-slide {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -43,7 +50,8 @@ title: Home
 .fade-slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  display: block;
 }
 
 .fade-show {
