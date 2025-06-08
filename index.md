@@ -20,6 +20,10 @@ title: Home
   max-height: 350px;
   overflow: hidden;
   position: relative;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-track {
@@ -30,11 +34,13 @@ title: Home
 
 .slider-image {
   width: 100%;
-  flex-shrink: 0;
-  object-fit: cover;
   height: 350px;
+  object-fit: contain; /* ✅ fix: show full image */
+  flex-shrink: 0;
+  background-color: white;
 }
 </style>
+
 
 <script>
 let slidePos = 0;
