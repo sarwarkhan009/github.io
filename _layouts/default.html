@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | QuizWallah</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <!-- Logo -->
+    <header style="text-align:center; padding: 1rem;">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="QuizWallah Logo" style="width: 120px;" />
+    </header>
+
+    <!-- Page Content -->
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align:center; margin-top: 2rem; padding: 1rem; font-size: 0.8rem; color: gray;">
+      © 2025 QuizWallah • All Rights Reserved
+    </footer>
+  </body>
+</html>
