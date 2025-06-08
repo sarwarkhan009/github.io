@@ -8,12 +8,18 @@ title: Home
 <p style="text-align: center; font-size: 1.1rem;">
   India's Smartest MCQ Practice App for Students of Class 1 to 10
 </p>
-
-<p style="text-align: center; margin-top: 1.5rem;">
+<p style="text-align: center; margin-top: 2rem;">
   <a href="#"
-     style="background-color: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold;"
-     onmouseover="this.style.backgroundColor='#218838';"
-     onmouseout="this.style.backgroundColor='#28a745';">
+     style="background-color: #28a745;
+            color: white;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;"
+     onmouseover="this.style.backgroundColor='#218838'; this.style.transform='scale(1.05)';"
+     onmouseout="this.style.backgroundColor='#28a745'; this.style.transform='scale(1)';">
     Get the App
   </a>
 </p>
