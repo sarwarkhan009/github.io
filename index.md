@@ -14,13 +14,12 @@ title: Home
     <img src="/assets/images/banner5.png" alt="Banner 5">
   </div>
 </div>
-
 <style>
 .slider-container {
   width: 100%;
   max-width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
+  max-height: 400px;
   overflow: hidden;
   position: relative;
 }
@@ -35,6 +34,8 @@ title: Home
   width: 100%;
   flex-shrink: 0;
   object-fit: cover;
+  height: 100%;
+  max-height: 400px;
 }
 @keyframes slideBanner {
   0%, 20%   { transform: translateX(0%); }
