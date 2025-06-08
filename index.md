@@ -3,54 +3,51 @@ layout: default
 title: Home
 ---
 
-<!-- 👇 SLIDING BANNER START -->
-<div class="banner-carousel">
-  <div class="banner-track">
-    <img src="/assets/images/banner1.png" alt="Banner 1">
-    <img src="/assets/images/banner2.png" alt="Banner 2">
-    <img src="/assets/images/banner3.png" alt="Banner 3">
-    <img src="/assets/images/banner4.png" alt="Banner 4">
-    <img src="/assets/images/banner5.png" alt="Banner 5">
+<!-- 👇 Clean Slider with sliding transition -->
+<div class="slider-container">
+  <div class="slider-track">
+    <img src="/assets/images/banner1.png" alt="Banner 1" class="slider-image">
+    <img src="/assets/images/banner2.png" alt="Banner 2" class="slider-image">
+    <img src="/assets/images/banner3.png" alt="Banner 3" class="slider-image">
+    <img src="/assets/images/banner4.png" alt="Banner 4" class="slider-image">
+    <img src="/assets/images/banner5.png" alt="Banner 5" class="slider-image">
   </div>
 </div>
 
 <style>
-<style>
-.banner-slider {
+.slider-container {
   width: 100%;
-  max-height: 300px;
+  max-height: 350px;
   overflow: hidden;
   position: relative;
 }
 
-.banner-track {
+.slider-track {
   display: flex;
-  width: 500%;
-  animation: slide 20s infinite linear;
+  transition: transform 0.8s ease-in-out;
+  width: 100%;
 }
 
-.banner-track img {
+.slider-image {
   width: 100%;
-  height: 300px;
-  object-fit: contain;
-  flex: 0 0 100%;
-  background-color: #f0f8ff;
-}
-@keyframes slide {
-  0% { transform: translateX(0); }
-  20% { transform: translateX(0); }
-  25% { transform: translateX(-100%); }
-  45% { transform: translateX(-100%); }
-  50% { transform: translateX(-200%); }
-  70% { transform: translateX(-200%); }
-  75% { transform: translateX(-300%); }
-  95% { transform: translateX(-300%); }
-  100% { transform: translateX(-400%); }
+  flex-shrink: 0;
+  object-fit: cover;
+  height: 350px;
 }
 </style>
 
+<script>
+let slidePos = 0;
+const images = document.querySelectorAll(".slider-image");
+const track = document.querySelector(".slider-track");
 
-<!-- 👆 SLIDING BANNER END -->
+function showNextSlide() {
+  slidePos = (slidePos + 1) % images.length;
+  track.style.transform = `translateX(-${slidePos * 100}%)`;
+}
+
+setInterval(showNextSlide, 4000); // 4 seconds per slide
+</script>
 
 
 <!-- 👇 HERO SECTION -->
