@@ -17,21 +17,26 @@ title: Home
 <style>
 .slider {
   width: 100%;
+  max-width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   position: relative;
+  margin: auto;
 }
 
 .slides {
   display: flex;
   width: 500%;
+  height: 100%;
   animation: slideShow 25s infinite;
 }
 
 .slides img {
   width: 100%;
+  height: 100%;
   object-fit: contain;
-  flex-shrink: 0;
+  flex: 0 0 100%;
+  display: block;
 }
 @keyframes slideShow {
   0%   { transform: translateX(0%); }
