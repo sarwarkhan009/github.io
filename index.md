@@ -24,7 +24,6 @@ title: Home
 </p>
 
 
-<hr style="margin: 2rem 0;" />
 <div style="background-color: white; padding: 2rem 1rem;">
   <h2 style="text-align: center;">Why Choose Quiz Wallah?</h2>
 <ul style="max-width: 700px; margin: auto; font-size: 1rem;">
