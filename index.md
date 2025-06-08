@@ -4,38 +4,45 @@ title: Home
 ---
 
 <!-- 👇 Clean Slider with sliding transition -->
+
+
 <div class="slider">
   <div class="slides">
-    <img src="/assets/images/banner1.png" alt="Banner 1">
-    <img src="/assets/images/banner2.png" alt="Banner 2">
-    <img src="/assets/images/banner3.png" alt="Banner 3">
-    <img src="/assets/images/banner4.png" alt="Banner 4">
-    <img src="/assets/images/banner5.png" alt="Banner 5">
+    <div class="slide"><img src="/assets/images/banner1.png" alt="Banner 1"></div>
+    <div class="slide"><img src="/assets/images/banner2.png" alt="Banner 2"></div>
+    <div class="slide"><img src="/assets/images/banner3.png" alt="Banner 3"></div>
+    <div class="slide"><img src="/assets/images/banner4.png" alt="Banner 4"></div>
+    <div class="slide"><img src="/assets/images/banner5.png" alt="Banner 5"></div>
   </div>
 </div>
 
 <style>
 .slider {
+  position: relative;
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 16 / 9;
+  height: auto;
   overflow: hidden;
-  position: relative;
-  margin: auto;
 }
 
 .slides {
   display: flex;
   width: 500%;
-  height: 100%;
   animation: slideShow 25s infinite;
 }
 
-.slides img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.slide {
   flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 500px;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 @keyframes slideShow {
