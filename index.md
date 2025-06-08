@@ -58,8 +58,6 @@ function showSlides() {
 </script>
 
 <!-- 👇 STEP 2: Existing hero content below -->
-<h1 style="text-align: center;">Welcome to Quiz Wallah</h1>
-<p style="text-align: center;">India's Smartest MCQ Practice App...</p>
 
 <h1 style="text-align: center; font-size: 2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
   Welcome to Quiz Wallah
