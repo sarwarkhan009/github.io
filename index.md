@@ -55,26 +55,26 @@ showFadeSlides();
 </script>
 
 
-<!-- 👇 HERO SECTION -->
-<h1 style="text-align: center; font-size: 2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
-  Welcome to Quiz Wallah
-</h1>
+<!-- Hero Title and Tagline Section -->
+<section style="text-align: center; padding: 2rem 1rem; background-color: #e3f2fd;">
+  <h1 style="font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); margin-bottom: 0.5rem;">
+    Welcome to Quiz Wallah
+  </h1>
+  <p style="font-size: 1.2rem; color: #333;">
+    India’s Smartest MCQ Practice App for Students of Class 1 to 10
+  </p>
+  <div style="margin-top: 1.5rem;">
+    <a href="#"
+       style="background-color: #28a745; color: white; padding: 14px 28px; font-size: 1.1rem;
+              text-decoration: none; border-radius: 6px; font-weight: bold;
+              box-shadow: 2px 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease;"
+       onmouseover="this.style.backgroundColor='#218838'; this.style.transform='scale(1.05)'"
+       onmouseout="this.style.backgroundColor='#28a745'; this.style.transform='scale(1)'">
+      Get the App
+    </a>
+  </div>
+</section>
 
-<p style="text-align: center; font-size: 1.1rem;">
-  India's Smartest MCQ Practice App for Students of Class 1 to 10
-</p>
-
-<p style="text-align: center; margin-top: 1.5rem;">
-  <a href="#"
-     style="background-color: #28a745; color: white; padding: 16px 32px; font-size: 1.1rem;
-            text-decoration: none; border-radius: 8px; font-weight: bold;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
-            transition: all 0.2s ease;"
-     onmouseover="this.style.backgroundColor='#218838'; this.style.transform='scale(1.05)';"
-     onmouseout="this.style.backgroundColor='#28a745'; this.style.transform='scale(1)';">
-    Get the App
-  </a>
-</p>
 
 
 <!-- 👇 FEATURES SECTION -->
