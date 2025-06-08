@@ -3,10 +3,6 @@ layout: default
 title: Home
 ---
 
-<p align="center">
-  <img src="/assets/images/logo.png" alt="QuizWallah Logo" width="150" />
-</p>
-
 <h1 style="text-align: center;">Welcome to QuizWallah</h1>
 
 <p style="text-align: center; font-size: 1.1rem;">
