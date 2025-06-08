@@ -10,10 +10,14 @@ title: Home
 </p>
 
 <p style="text-align: center; margin-top: 1.5rem;">
-  <a href="#" style="background-color: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold;">
+  <a href="#"
+     style="background-color: #28a745; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold;"
+     onmouseover="this.style.backgroundColor='#218838';"
+     onmouseout="this.style.backgroundColor='#28a745';">
     Get the App
   </a>
 </p>
+
 
 <hr style="margin: 2rem 0;" />
 
