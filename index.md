@@ -15,30 +15,30 @@ title: Home
 </div>
 
 <style>
-.banner-carousel {
+<style>
+.banner-slider {
   width: 100%;
+  max-height: 300px;
   overflow: hidden;
   position: relative;
-  height: 320px;
 }
 
 .banner-track {
   display: flex;
   width: 500%;
-  animation: slideBanner 25s linear infinite;
+  animation: slide 20s infinite linear;
 }
 
 .banner-track img {
-  height: 320px;
   width: 100%;
-  object-fit: cover;
+  height: 300px;
+  object-fit: contain;
   flex: 0 0 100%;
+  background-color: #f0f8ff;
 }
-
-
-@keyframes slideBanner {
-  0% { transform: translateX(0%); }
-  20% { transform: translateX(0%); }
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
   25% { transform: translateX(-100%); }
   45% { transform: translateX(-100%); }
   50% { transform: translateX(-200%); }
@@ -48,6 +48,8 @@ title: Home
   100% { transform: translateX(-400%); }
 }
 </style>
+
+
 <!-- 👆 SLIDING BANNER END -->
 
 
