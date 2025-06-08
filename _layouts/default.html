@@ -25,13 +25,13 @@ layout: default
   </div>
   <nav>
     {% for item in site.nav %}
-      <a href="{{ item.url | relative_url }}"
-         style="margin: 0 12px; text-decoration: none; font-weight: bold; color: #0366d6;"
-         onmouseover="this.style.color='#d63384';"
-         onmouseout="this.style.color='#0366d6';"
-         {% if page.url == item.url or page.url == item.url | append: '/' %}style="text-decoration: underline;"{% endif %}>
-        {{ item.title }}
-      </a>
+     <a href="{{ item.url | relative_url }}"
+   style="margin: 0 18px; text-decoration: none; font-weight: 600; font-size: 1rem; color: #007bff;"
+   onmouseover="this.style.color='#d63384';"
+   onmouseout="this.style.color='#007bff';">
+  {{ item.title }}
+</a>
+
     {% endfor %}
   </nav>
 </header>
