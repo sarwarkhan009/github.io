@@ -5,13 +5,19 @@ title: Home
 <!-- 👇 STEP 1: Paste banner slider code here -->
 <div class="banner-slider">
   <div class="slide fade">
-    <img src="/assets/images/banner1.jpg" />
+    <img src="/assets/images/banner1.png" />
   </div>
   <div class="slide fade">
-    <img src="/assets/images/banner2.jpg" />
+    <img src="/assets/images/banner2.png" />
   </div>
   <div class="slide fade">
-    <img src="/assets/images/banner3.jpg" />
+    <img src="/assets/images/banner3.png" />
+  </div>
+   <div class="slide fade">
+    <img src="/assets/images/banner4.png" />
+  </div>
+   <div class="slide fade">
+    <img src="/assets/images/banner5.png" />
   </div>
 </div>
 
