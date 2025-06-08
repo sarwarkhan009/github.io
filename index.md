@@ -29,11 +29,12 @@ title: Home
 }
 
 .banner-track img {
+  height: 320px;
   width: 100%;
-  height: auto;
   object-fit: cover;
   flex: 0 0 100%;
 }
+
 
 @keyframes slideBanner {
   0% { transform: translateX(0%); }
