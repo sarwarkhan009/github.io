@@ -78,16 +78,20 @@ showFadeSlides();
 
 
 <!-- 👇 FEATURES SECTION -->
-<div style="background-color: white; padding: 2rem 1rem;">
-  <h2 style="text-align: center;">Why Choose Quiz Wallah?</h2>
-  <ul style="max-width: 700px; margin: auto; font-size: 1rem;">
-    <li>✅ Daily MCQ assignments with instant results</li>
-    <li>🔁 Practice old assignments anytime, as many times</li>
-    <li>👪 Parent dashboard to track child’s performance</li>
-    <li>🏫 School-wise reports generated automatically</li>
-    <li>🎯 Perfect screen-time use: productive, educational, fun!</li>
+<!-- Why Choose Quiz Wallah Section -->
+<section style="background-color: #ffffff; padding: 3rem 1rem;">
+  <h2 style="text-align: center; font-size: 1.8rem; font-weight: 700; margin-bottom: 1.5rem;">
+    Why Choose Quiz Wallah?
+  </h2>
+  <ul style="max-width: 800px; margin: auto; font-size: 1.05rem; line-height: 1.8; list-style: none; padding: 0;">
+    <li style="margin-bottom: 1rem;">✅ Daily MCQ assignments with instant results</li>
+    <li style="margin-bottom: 1rem;">🔁 Practice old assignments anytime, as many times</li>
+    <li style="margin-bottom: 1rem;">👪 Parent dashboard to track child’s performance</li>
+    <li style="margin-bottom: 1rem;">🏫 School-wise reports generated automatically</li>
+    <li style="margin-bottom: 1rem;">🎯 Perfect screen-time use: productive, educational, fun!</li>
   </ul>
-</div>
+</section>
+
 
 
 <!-- 👇 APP PREVIEW SECTION -->
