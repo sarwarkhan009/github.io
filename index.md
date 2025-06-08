@@ -14,14 +14,15 @@ title: Home
     <img src="/assets/images/banner5.png" alt="Banner 5">
   </div>
 </div>
+
 <style>
 .slider-container {
   width: 100%;
   max-width: 100%;
-  height: auto;
-  max-height: 400px;
+  height: 400px;
   overflow: hidden;
   position: relative;
+  background: #e6f0ff;
 }
 
 .slider-track {
@@ -32,10 +33,10 @@ title: Home
 
 .slider-track img {
   width: 100%;
-  flex-shrink: 0;
-  object-fit: cover;
   height: 100%;
-  max-height: 400px;
+  flex-shrink: 0;
+  object-fit: contain; /* ✅ Fix: show full image without zooming in */
+  display: block;
 }
 @keyframes slideBanner {
   0%, 20%   { transform: translateX(0%); }
