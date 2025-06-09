@@ -7,7 +7,7 @@ title: Contact
 # Get in Touch
 
 We’d love to hear from you!  
-**Email:** quizwallahpatna@gmail.com  
+**Email:** futurespark.learning.solutions@gmail.com 
 **Phone:** +91-700 4050 165 
 **Address:** Firdaus Enclave, Church Road, Ranchi
 
